@@ -1,15 +1,5 @@
 import React from 'react';
-
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-  Redirect
-} from 'react-router-dom';
-
-import styled from 'styled-components';
-import Nav from './components/Nav';
-import Layout from './components/Layout';
+import {HashRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import Money from './views/Money';
 import Statistics from './views/Statistics';
 import Tags from './views/Tags';
@@ -36,7 +26,6 @@ function App() {
               <NoMatch/>
             </Route>
           </Switch>
-        <Nav/>
     </Router>
   );
 }
