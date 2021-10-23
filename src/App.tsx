@@ -4,7 +4,6 @@ import {
   HashRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect
 } from 'react-router-dom';
 
@@ -27,7 +26,7 @@ function App() {
       <Wrapper>
         <Main>
           <Switch>
-            <Route path="/tags">
+            <Route path="/label">
               <Tags/>
             </Route>
             <Route path="/money">

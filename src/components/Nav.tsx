@@ -1,15 +1,11 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import React from 'react';
-
-require('icons/money.svg');
-require('icons/label.svg');
-require('icons/statistics.svg');
-
+import Icon from './Icon';
 
 const NavWrapper = styled.nav`
-  line-height: 24px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  line-height: 24px; { /* 导航边框 的阴影 */
+} box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 
   > ul {
     display: flex;
@@ -34,21 +30,15 @@ const Nav = () => {
     <NavWrapper>
       <ul>
         <li>
-          <svg className="icon">
-            <use xlinkHref="#label"></use>
-          </svg>
-          <Link to="/tags">标签页</Link>
+          <Icon name="label"/>
+          <Link to="/label">标签页</Link>
         </li>
         <li>
-          <svg className="icon">
-            <use xlinkHref="#money"></use>
-          </svg>
+          <Icon name="money"/>
           <Link to="/money">记账页</Link>
         </li>
         <li>
-          <svg className="icon">
-            <use xlinkHref="#statistics"></use>
-          </svg>
+          <Icon name="statistics"/>
           <Link to="/statistics">统计页</Link>
         </li>
       </ul>
