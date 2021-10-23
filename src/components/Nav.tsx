@@ -4,7 +4,8 @@ import React from 'react';
 import Icon from './Icon';
 
 const NavWrapper = styled.nav`
-  line-height: 24px; { /* 导航边框 的阴影 */
+  line-height: 24px;
+background: white;{ /* 导航边框 的阴影 */
 } box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 
   > ul {
