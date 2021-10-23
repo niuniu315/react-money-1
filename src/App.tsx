@@ -10,6 +10,10 @@ import {
 import styled from 'styled-components';
 import Nav from './components/Nav';
 import Layout from './components/Layout';
+import Money from './views/Money';
+import Statistics from './views/Statistics';
+import Tags from './views/Tags';
+import NoMatch from './views/NoMatch';
 
 
 function App() {
@@ -34,36 +38,6 @@ function App() {
           </Switch>
         <Nav/>
     </Router>
-  );
-}
-
-function NoMatch() {
-  return (
-    <div>路径不存在</div>
-  );
-}
-
-function Tags() {
-  return (
-    <Layout>
-      <h2>标签页面</h2>
-    </Layout>
-  );
-}
-
-function Money() {
-  return (
-    <Layout>
-      <h2>记账页面</h2>
-    </Layout>
-  );
-}
-
-function Statistics() {
-  return (
-    <Layout>
-      <h2>统计页面</h2>
-    </Layout>
   );
 }
 
